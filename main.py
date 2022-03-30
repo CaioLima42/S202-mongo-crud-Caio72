@@ -4,16 +4,16 @@ from helper.WriteAJson import writeAJson
 
 db = Database("db", "livros")
 
-# Create
-db.create("Clean Code", "Robert Martin", 2008, 31.0)
-db.create("Harry Potter e a pedra fisofolal", "JK Rowling", 1997, 32.0)
-db.create("A Guerra dos Tronos", "George R. R. Martin", 1996, 52.9)
 
-# Read
+db.create("Livro1", "Autor1", 2001, 10.0)
+db.create("Livro2", "Autor2", 2002, 20.0)
+db.create("Livro3", "Autor3", 2003, 30)
+
+
 db.read()
 
-# Update
-db.update("A Guerra dos Tronos", 45.9)
 
-# Delete
-db.delete("Clean Code")
+db.update("livro1", 40.0)
+
+
+db.delete("Livro2")
